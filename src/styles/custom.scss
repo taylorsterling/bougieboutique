@@ -1,0 +1,110 @@
+
+// bootstrap scss theme-colors variables with defaults
+
+$primary: #090910;
+$secondary: #fa8ec9;
+$accent: #f73fa1d7;
+$success: green;
+$info: cyan;
+$warning: yellow;
+$danger:  red;
+$light: white;
+$dark:  grey;
+
+// bootstrap scss theme-colors-map
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "accent":     $accent,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+
+$navbar-brand-font-size: 2.2rem;
+$navbar-light-color: white;
+$navbar-dark-hover-color: $accent;
+$navbar-dark-active-color: $accent;
+$nav-link-color: $accent;
+$nav-link-hover-color: $accent;
+$link-hover-color: $accent;
+
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  background-image: URL('/background.jpg');
+  background-attachment: fixed;
+  top: 0;
+}
+
+.navWrap {
+  position: fixed;
+  top: 0;
+}
+
+.navbar {
+  background-color: $primary;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+#collasible-nav-dropdown {
+  z-index: 2;
+}
+
+.top-bubbles {
+  margin-top: -1%;
+}
+
+.bubbles {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bubbles-down {
+rotate: 180deg;
+width: 100%;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+margin-bottom: -1%;
+}
+
+.bubbles-img {
+  background-image: url('/bubbles.png');
+}
+
+.welcome {
+  margin-top: 7rem;
+  padding-top: 10%;
+}
+
+h1 {
+  font-size: 3.5rem;
+
+}
+
+.brand {
+  font-size: 3.5rem;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: $accent;
+}
+
+.card {
+  border: none;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  z-index: 0;
+}
