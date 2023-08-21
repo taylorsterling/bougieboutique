@@ -5,8 +5,8 @@ import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 import '@/styles/custom.scss'
 import Image from 'next/image'
 import Brand from '@/components/Brand'
-import { Montserrat } from 'next/font/google'
-const montserrat = Montserrat({ subsets: ['latin'], weight: ["400"] })
+import { Raleway } from 'next/font/google'
+const raleway = Raleway({ subsets: ['latin'], weight: ["400"] })
 import { Domine } from 'next/font/google'
 const domine = Domine({ subsets: ['latin'], weight: ["600"] })
 import Link from 'next/link'
@@ -15,7 +15,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <main className={`${montserrat.className} text-white`}>
+    <main className={`${raleway.className} text-white`}>
       <div className="navWrap">
         <Navbar variant="dark" expand="lg" className="pt-3 pb-0 mb-0">
           <Container>
@@ -25,14 +25,14 @@ export default function Home() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className={`${montserrat.className} ms-auto text-start`}>
+              <Nav className={`${raleway.className} ms-auto text-start`}>
                 <Nav.Link className="navLink" href="#services">Home</Nav.Link>
                 <Nav.Link className="navLink" href="#about">About</Nav.Link>
-                <NavDropdown title="Categories" id="collasible-nav-dropdown">
-                  <NavDropdown.Item as={Link} href="/dresses">Dresses</NavDropdown.Item>
-                  <NavDropdown.Item as={Link} href="/tops">Tops</NavDropdown.Item>
-                  <NavDropdown.Item as={Link} href="/bottoms">Bottoms</NavDropdown.Item>
-                  <NavDropdown.Item as={Link} href="/outfits">Outfits</NavDropdown.Item>
+                <NavDropdown className="dropdownLink" title="Shop" id="collasible-nav-dropdown">
+                  <NavDropdown.Item className="dropdownLink" as={Link} href="/dresses">Dresses</NavDropdown.Item>
+                  <NavDropdown.Item className="dropdownLink" as={Link} href="/tops">Tops</NavDropdown.Item>
+                  <NavDropdown.Item className="dropdownLink" as={Link} href="/bottoms">Bottoms</NavDropdown.Item>
+                  <NavDropdown.Item className="dropdownLink" as={Link} href="/outfits">Outfits</NavDropdown.Item>
                 </NavDropdown>
               </Nav>
             </Navbar.Collapse>
@@ -61,7 +61,7 @@ export default function Home() {
           <h2 className="text-center my-auto py-5 fs-1">Featured Items</h2>
           <div className="col-md-3">
             <div className="card">
-              <img className="card-img-top" src="/featured1.png" />
+              <img className="img-fluid text-center mx-auto image" src="/featured1.png" />
               <div className="card-body">
                 <h5 className="card-title">Lazy Day Getup</h5>
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -71,7 +71,7 @@ export default function Home() {
           </div>
           <div className="col-md-3">
             <div className="card">
-              <img className="card-img-top" src="/featured2.png" />
+              <img className="img-fluid text-center mx-auto image"  src="/featured2.png" />
               <div className="card-body">
                 <h5 className="card-title">Fame- Coat</h5>
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -81,7 +81,7 @@ export default function Home() {
           </div>
           <div className="col-md-3">
             <div className="card">
-              <img className="card-img-top" src="/featured3.png" />
+              <img className="img-fluid text-center mx-auto image"  src="/featured3.png" />
               <div className="card-body">
                 <h5 className="card-title">Pretty In Pink Dress</h5>
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -91,7 +91,7 @@ export default function Home() {
           </div>
           <div className="col-md-3">
             <div className="card">
-              <img className="card-img-top" src="/featured4.png" />
+              <img className="img-fluid text-center mx-auto image"  src="/featured4.png" />
               <div className="card-body">
                 <h5 className="card-title">Flower Power Overall Dress</h5>
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -99,6 +99,12 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="container-fluid">
+        <div className="row">
+          
         </div>
       </div>
 

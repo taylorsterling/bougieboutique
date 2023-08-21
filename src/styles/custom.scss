@@ -51,6 +51,14 @@ body {
   width: 100%;
 }
 
+.navLink {
+  font-size: 1.2rem;
+}
+
+.dropdownLink {
+  font-size: 1.2rem;
+}
+
 #collasible-nav-dropdown {
   z-index: 2;
 }
@@ -106,5 +114,8 @@ a:hover {
   background-color: transparent;
   color: white;
   text-align: center;
-  z-index: 0;
+}
+
+.image {
+  z-index: -2;
 }
