@@ -98,7 +98,7 @@ h1 {
 }
 
 .brand {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 a {
@@ -117,5 +117,9 @@ a:hover {
 }
 
 .image {
+  z-index: -2;
+}
+
+.button {
   z-index: -2;
 }
