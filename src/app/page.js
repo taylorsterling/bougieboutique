@@ -43,13 +43,13 @@ export default function Home() {
 
       <div className="container-fluid">
         <div className="row welcome">
-          <h1 className="text-white text-center pb-5">Welcome to the <Brand></Brand> !</h1>
+          <h1 className="text-white text-center py-4">Welcome to the <Brand></Brand> !</h1>
           <div className="col-md-6 py-5">
-            <img className="mx-auto img-fluid text-center px-5 py-5" src="/nana.png" />
+            <img className="mx-auto img-fluid text-center px-5 py-3" src="/nana.png" />
           </div>
-          <div className="col-md-6 py-5">
-            <h2 className="text-center my-auto py-5 fs-1"><em>Just a Nana and some thread</em></h2>
-            <p className="fs-3 py-5">Looking for high quality clothes for the adorable girls in your life? Look no further! Here we make hand-sewn home-made dresses, outfits, and more with practicality, comfort, and style in mind.<br></br><br></br>
+          <div className="col-md-6 py-3">
+            <h2 className="text-center my-auto py-3 fs-2"><em>Just a Nana and some thread</em></h2>
+            <p className="fs-4 py-3">Looking for high quality clothes for the adorable girls in your life? Look no further! Here we make hand-sewn home-made dresses, outfits, and more with practicality, comfort, and style in mind.<br></br><br></br>
               We regularly change up our inventory based on stock, season, and item popularity, so if you don't see something right away you're in love with, please check back soon! <br></br><br></br>
               Keep up with the latest updates by signing up for our Newsletter <a href="#newsletter">here!</a></p>
           </div>
@@ -104,7 +104,7 @@ export default function Home() {
 
       <div className="container-fluid">
         <div className="row">
-          
+
         </div>
       </div>
 
